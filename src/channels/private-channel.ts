@@ -46,6 +46,7 @@ export class PrivateChannel {
    */
   protected authHost(socket: any): string {
     Log.info(this)
+    Log.info("Thong tin headers")
     Log.info(socket.request.headers)
 
     let authHosts = this.options.authHost
