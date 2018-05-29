@@ -39,6 +39,7 @@ var PrivateChannel = (function () {
                 }
             }
         }
+        log_1.Log.info("Auth Host: " + authHostSelected);
         return authHostSelected;
     };
     PrivateChannel.prototype.hasMatchingHost = function (referer, host) {

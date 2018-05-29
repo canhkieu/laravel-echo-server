@@ -71,7 +71,7 @@ export class PrivateChannel {
         }
       }
     }
-
+    Log.info("Auth Host: " + authHostSelected);
     return authHostSelected;
   }
 
