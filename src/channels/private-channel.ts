@@ -46,7 +46,7 @@ export class PrivateChannel {
    */
   protected authHost(socket: any): string {
     Log.info(this)
-    Log.info(socket)
+    Log.info(socket.request.headers)
 
     let authHosts = this.options.authHost
       ? this.options.authHost
