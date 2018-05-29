@@ -19,6 +19,8 @@ var PrivateChannel = (function () {
     };
     PrivateChannel.prototype.authHost = function (socket) {
         log_1.Log.info(this);
+        log_1.Log.info("Thong tin headers");
+        log_1.Log.info(socket.request.headers);
         var authHosts = this.options.authHost
             ? this.options.authHost
             : this.options.host;
